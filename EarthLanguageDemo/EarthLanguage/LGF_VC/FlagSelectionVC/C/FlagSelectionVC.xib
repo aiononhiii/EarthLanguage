@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FlagSelectionVC" customModule="EarthLanguage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5b8-05-lCq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zoq-Ia-7Ti">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="w0J-K4-nkN" customClass="LGFMagicCollectionView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="10" y="217" width="355" height="233.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="qhy-Nq-FMC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="iN0-l3-epB" id="jpI-2S-TU9"/>
+                                    <outlet property="delegate" destination="iN0-l3-epB" id="Wy1-H5-jyM"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRt-eH-2bY" customClass="LGFMagicView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="140.5" y="83.5" width="94" height="66"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Denmark" translatesAutoresizingMaskIntoConstraints="NO" id="Ege-bB-5Ep" customClass="LGFMagicImageView" customModule="EarthLanguage" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="74" height="46"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ege-bB-5Ep" firstAttribute="leading" secondItem="lRt-eH-2bY" secondAttribute="leading" constant="10" id="NfW-Pv-9AH"/>
+                                    <constraint firstAttribute="width" secondItem="lRt-eH-2bY" secondAttribute="height" multiplier="5:3.5" id="QvM-NU-N5R"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ege-bB-5Ep" secondAttribute="trailing" constant="10" id="Uun-vH-aQ6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ege-bB-5Ep" secondAttribute="bottom" constant="10" id="ey7-6p-Uy4"/>
+                                    <constraint firstItem="Ege-bB-5Ep" firstAttribute="top" secondItem="lRt-eH-2bY" secondAttribute="top" constant="10" id="fFF-tc-rnn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="replace" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-Kh-lcq">
+                                <rect key="frame" x="171.5" y="164.5" width="32.5" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mO1-Kh-lcq" secondAttribute="height" multiplier="1:1" id="VfE-4Z-KS1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="show_help_image" translatesAutoresizingMaskIntoConstraints="NO" id="Zuq-Wf-jag" customClass="LGFMagicImageView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="312" y="604" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zuq-Wf-jag" secondAttribute="height" multiplier="1:1" id="WBs-f2-aXT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="w0J-K4-nkN" firstAttribute="height" secondItem="Zoq-Ia-7Ti" secondAttribute="height" multiplier="0.35" id="2zp-kn-n56"/>
+                            <constraint firstItem="w0J-K4-nkN" firstAttribute="leading" secondItem="Zoq-Ia-7Ti" secondAttribute="leading" constant="10" id="3jD-ob-uZd"/>
+                            <constraint firstAttribute="trailing" secondItem="w0J-K4-nkN" secondAttribute="trailing" constant="10" id="4q0-wx-TC4"/>
+                            <constraint firstAttribute="bottom" secondItem="Zuq-Wf-jag" secondAttribute="bottom" constant="13" id="7EH-lQ-f1L"/>
+                            <constraint firstItem="mO1-Kh-lcq" firstAttribute="centerX" secondItem="Zoq-Ia-7Ti" secondAttribute="centerX" id="AWa-1v-uHo"/>
+                            <constraint firstItem="mO1-Kh-lcq" firstAttribute="top" secondItem="lRt-eH-2bY" secondAttribute="bottom" constant="15" id="IGH-kb-EBS"/>
+                            <constraint firstItem="lRt-eH-2bY" firstAttribute="centerX" secondItem="Zoq-Ia-7Ti" secondAttribute="centerX" id="OAW-hU-LEf"/>
+                            <constraint firstAttribute="trailing" secondItem="Zuq-Wf-jag" secondAttribute="trailing" constant="13" id="Q6e-ZK-5WT"/>
+                            <constraint firstItem="lRt-eH-2bY" firstAttribute="width" secondItem="Zoq-Ia-7Ti" secondAttribute="width" multiplier="0.25" id="SYn-lf-fck"/>
+                            <constraint firstItem="w0J-K4-nkN" firstAttribute="centerY" secondItem="Zoq-Ia-7Ti" secondAttribute="centerY" id="aej-OM-KZx"/>
+                            <constraint firstItem="w0J-K4-nkN" firstAttribute="top" secondItem="mO1-Kh-lcq" secondAttribute="bottom" constant="20" id="jUM-Go-Qfi"/>
+                            <constraint firstItem="lRt-eH-2bY" firstAttribute="centerY" secondItem="Zoq-Ia-7Ti" secondAttribute="centerY" multiplier="0.35" id="uhm-de-Tqg"/>
+                            <constraint firstItem="Zuq-Wf-jag" firstAttribute="height" secondItem="Zoq-Ia-7Ti" secondAttribute="height" multiplier="0.075" id="xHv-yR-X20"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5b8-05-lCq" secondAttribute="bottom" id="7dR-Az-VQW"/>
+                <constraint firstItem="5b8-05-lCq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UzN-hV-cea"/>
+                <constraint firstAttribute="trailing" secondItem="5b8-05-lCq" secondAttribute="trailing" id="jGH-Vl-ut3"/>
+                <constraint firstItem="5b8-05-lCq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mnN-2y-RT7"/>
+            </constraints>
+            <connections>
+                <outlet property="allFlags" destination="w0J-K4-nkN" id="7eB-wD-YE5"/>
+                <outlet property="selectFalg" destination="Ege-bB-5Ep" id="cHo-gJ-W5K"/>
+                <outlet property="selectFalgBackView" destination="lRt-eH-2bY" id="Qq2-yM-hyj"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Denmark" width="1025" height="669"/>
+        <image name="replace" width="128" height="128"/>
+        <image name="show_help_image" width="500" height="500"/>
+    </resources>
+</document>

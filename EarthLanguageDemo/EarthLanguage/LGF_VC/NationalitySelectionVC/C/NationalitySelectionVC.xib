@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NationalitySelectionVC" customModule="EarthLanguage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zti-hS-CpJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jnJ-eq-YhR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFK-Go-QH8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                                <color key="backgroundColor" red="0.89772427269999999" green="0.94114101930000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="1Rp-jd-S07"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7D-oe-OkT" customClass="LGFMagicButton" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="175.5" height="321.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="transformnum">
+                                        <real key="value" value="1.05"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="oneNat"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="1" green="0.10980392160000001" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="natBtnOnSelect:" destination="iN0-l3-epB" eventType="touchDown" id="hFn-6a-op2"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="oNs-ye-5Ul"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpOutside" id="p4v-cj-zJz"/>
+                                    <outletCollection property="gestureRecognizers" destination="aQ2-3I-K5E" appends="YES" id="bIJ-uU-aKe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqn-xa-zk5" customClass="LGFMagicButton" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="8" y="337.5" width="175.5" height="321.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="transformnum">
+                                        <real key="value" value="1.05"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="threeNat"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.039215686274509803" green="0.58431372549019611" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="natBtnOnSelect:" destination="iN0-l3-epB" eventType="touchDown" id="l7b-0y-6Oo"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="47s-zk-R3b"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpOutside" id="YCb-DF-c4p"/>
+                                    <outletCollection property="gestureRecognizers" destination="T8E-0a-QmT" appends="YES" id="u8M-0O-ChD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNx-t0-4HJ" customClass="LGFMagicButton" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="191.5" y="8" width="175.5" height="321.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="transformnum">
+                                        <real key="value" value="1.05"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="twoNat"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.396078431372549" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="natBtnOnSelect:" destination="iN0-l3-epB" eventType="touchDown" id="IbJ-vo-bcb"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpOutside" id="WKj-mJ-9bd"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="yQt-15-hhC"/>
+                                    <outletCollection property="gestureRecognizers" destination="BpM-6e-BSr" appends="YES" id="pjR-pV-lvm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-1X-826" customClass="LGFMagicImageView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="28" y="112.5" width="170.5" height="112.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lEQ-1X-826" secondAttribute="height" multiplier="5:3.3" id="Yxe-PX-yVe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="oneNat"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Jg-gW-Wg4" customClass="LGFMagicImageView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="28" y="442" width="170.5" height="112.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Jg-gW-Wg4" secondAttribute="height" multiplier="5:3.3" id="otr-1P-k6K"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="threeNat"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u3p-qH-FGj" customClass="LGFMagicImageView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="176.5" y="112.5" width="170.5" height="112.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u3p-qH-FGj" secondAttribute="height" multiplier="5:3.3" id="OYf-Yv-5XZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="twoNat"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马来西亚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQa-pd-757" customClass="LGFMagicLabel" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="28" y="554.5" width="187.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <color key="textColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="threeNat"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GN-1y-NmU" customClass="LGFMagicLabel" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="28" y="94.5" width="187.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <color key="textColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="oneNat"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nc-Bd-ZPm" customClass="LGFMagicButton" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="195.5" y="487.5" width="166.5" height="166.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Nc-Bd-ZPm" secondAttribute="height" multiplier="1:1" id="KYP-Gv-8ms"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="show_help_image"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="transformnum">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="natBtnOnSelect:" destination="iN0-l3-epB" eventType="touchDown" id="xZP-vD-5BT"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpOutside" id="2I8-4v-5TL"/>
+                                    <action selector="natBtnUnSelect:" destination="iN0-l3-epB" eventType="touchUpInside" id="SQu-t9-2Ia"/>
+                                    <outletCollection property="gestureRecognizers" destination="bEH-gR-oUi" appends="YES" id="ybh-AT-QJt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fz5-3e-qDC">
+                                <rect key="frame" x="194" y="634.5" width="41" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
+                                <state key="normal" title="手写输入">
+                                    <color key="titleColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8c-Vh-kD5">
+                                <rect key="frame" x="263.5" y="337.5" width="103" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
+                                <state key="normal" title="长按齿轮进入设置页面">
+                                    <color key="titleColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pX4-4O-8w0" customClass="LGFMagicCollectionView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="141" y="201" width="93.5" height="266.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="n2w-61-qYA">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94219435307017541" green="0.94219435307017541" blue="0.94219435307017541" alpha="0.20361052259887005" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iN0-l3-epB" id="0Cu-79-YQA"/>
+                                    <outlet property="delegate" destination="iN0-l3-epB" id="Aa6-4o-zxL"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="ubR-fh-sRV">
+                                <rect key="frame" x="141.5" y="481.5" width="93.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="L3N-2E-LEn"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.96707099780000005" green="0.96707099780000005" blue="0.96707099780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.39607843139999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美国" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oU-pm-rWL" customClass="LGFMagicLabel" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="159.5" y="94.5" width="187.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <color key="textColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="magicType" value="twoNat"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DBP-nB-M5g" customClass="LGFMagicImageView" customModule="EarthLanguage" customModuleProvider="target">
+                                <rect key="frame" x="-25.5" y="411" width="216" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DBP-nB-M5g" secondAttribute="height" multiplier="1:1" id="ymg-CJ-8kh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.8823841831140351" green="0.8823841831140351" blue="0.8823841831140351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ubR-fh-sRV" firstAttribute="leading" secondItem="pX4-4O-8w0" secondAttribute="leading" id="1h2-RD-0aS"/>
+                            <constraint firstItem="ubR-fh-sRV" firstAttribute="trailing" secondItem="pX4-4O-8w0" secondAttribute="trailing" id="3Qj-ny-tsz"/>
+                            <constraint firstItem="f8c-Vh-kD5" firstAttribute="trailing" secondItem="xNx-t0-4HJ" secondAttribute="trailing" id="5Yp-wV-C5v"/>
+                            <constraint firstItem="1oU-pm-rWL" firstAttribute="trailing" secondItem="u3p-qH-FGj" secondAttribute="trailing" id="9Ys-1b-Her"/>
+                            <constraint firstItem="vQa-pd-757" firstAttribute="width" secondItem="jnJ-eq-YhR" secondAttribute="width" multiplier="0.5" id="9h8-iQ-lkO"/>
+                            <constraint firstItem="u3p-qH-FGj" firstAttribute="height" secondItem="xNx-t0-4HJ" secondAttribute="height" multiplier="0.35" id="BVP-nr-hOi"/>
+                            <constraint firstItem="1oU-pm-rWL" firstAttribute="width" secondItem="jnJ-eq-YhR" secondAttribute="width" multiplier="0.5" id="CJl-Zh-5iU"/>
+                            <constraint firstAttribute="trailing" secondItem="xNx-t0-4HJ" secondAttribute="trailing" constant="8" id="EpI-IJ-evU"/>
+                            <constraint firstItem="vQa-pd-757" firstAttribute="top" secondItem="1Jg-gW-Wg4" secondAttribute="bottom" id="GMF-Xg-pM4"/>
+                            <constraint firstItem="6Nc-Bd-ZPm" firstAttribute="trailing" secondItem="xNx-t0-4HJ" secondAttribute="trailing" constant="-5" id="GWl-sk-02I"/>
+                            <constraint firstItem="G7D-oe-OkT" firstAttribute="height" secondItem="jnJ-eq-YhR" secondAttribute="height" multiplier="0.5" constant="-12" id="HyO-x3-aSm"/>
+                            <constraint firstItem="G7D-oe-OkT" firstAttribute="width" secondItem="jnJ-eq-YhR" secondAttribute="width" multiplier="0.5" constant="-12" id="I3j-Zo-saX"/>
+                            <constraint firstItem="6Nc-Bd-ZPm" firstAttribute="height" secondItem="jnJ-eq-YhR" secondAttribute="height" multiplier="0.25" id="IBL-HF-YzZ"/>
+                            <constraint firstItem="lEQ-1X-826" firstAttribute="height" secondItem="G7D-oe-OkT" secondAttribute="height" multiplier="0.35" id="INh-OL-fLe"/>
+                            <constraint firstItem="xNx-t0-4HJ" firstAttribute="bottom" secondItem="G7D-oe-OkT" secondAttribute="bottom" id="JHA-Sp-QMg"/>
+                            <constraint firstItem="u3p-qH-FGj" firstAttribute="top" secondItem="1oU-pm-rWL" secondAttribute="bottom" id="LfS-AT-IaA"/>
+                            <constraint firstItem="Fz5-3e-qDC" firstAttribute="bottom" secondItem="aqn-xa-zk5" secondAttribute="bottom" id="MWX-68-7Ch"/>
+                            <constraint firstItem="aFK-Go-QH8" firstAttribute="leading" secondItem="jnJ-eq-YhR" secondAttribute="leading" id="RrT-fR-MoT"/>
+                            <constraint firstItem="f8c-Vh-kD5" firstAttribute="top" secondItem="xNx-t0-4HJ" secondAttribute="bottom" constant="8" id="T64-WW-gns"/>
+                            <constraint firstItem="6Nc-Bd-ZPm" firstAttribute="centerY" secondItem="DBP-nB-M5g" secondAttribute="centerY" multiplier="1.1" id="TQ1-Gp-y4E"/>
+                            <constraint firstItem="6Nc-Bd-ZPm" firstAttribute="bottom" secondItem="aqn-xa-zk5" secondAttribute="bottom" constant="-5" id="Wb4-LM-70O"/>
+                            <constraint firstItem="aqn-xa-zk5" firstAttribute="trailing" secondItem="G7D-oe-OkT" secondAttribute="trailing" id="WqL-As-K07"/>
+                            <constraint firstItem="aqn-xa-zk5" firstAttribute="leading" secondItem="jnJ-eq-YhR" secondAttribute="leading" constant="8" id="XDd-AB-xy9"/>
+                            <constraint firstItem="pX4-4O-8w0" firstAttribute="centerX" secondItem="jnJ-eq-YhR" secondAttribute="centerX" id="XEg-fh-BJP"/>
+                            <constraint firstItem="pX4-4O-8w0" firstAttribute="height" secondItem="jnJ-eq-YhR" secondAttribute="height" multiplier="0.4" id="Xcx-Ul-NS9"/>
+                            <constraint firstItem="lEQ-1X-826" firstAttribute="centerY" secondItem="G7D-oe-OkT" secondAttribute="centerY" id="Yyw-ys-GjX"/>
+                            <constraint firstItem="Fz5-3e-qDC" firstAttribute="leading" secondItem="aqn-xa-zk5" secondAttribute="trailing" constant="10" id="ZHT-Je-YHW"/>
+                            <constraint firstItem="1Jg-gW-Wg4" firstAttribute="leading" secondItem="aqn-xa-zk5" secondAttribute="leading" constant="20" id="bLP-oW-Rp3"/>
+                            <constraint firstAttribute="bottom" secondItem="aqn-xa-zk5" secondAttribute="bottom" constant="8" id="dce-xU-oFZ"/>
+                            <constraint firstAttribute="trailing" secondItem="aFK-Go-QH8" secondAttribute="trailing" id="duz-pU-AQz"/>
+                            <constraint firstItem="lEQ-1X-826" firstAttribute="leading" secondItem="G7D-oe-OkT" secondAttribute="leading" constant="20" id="fHZ-HB-64a"/>
+                            <constraint firstItem="1Jg-gW-Wg4" firstAttribute="height" secondItem="aqn-xa-zk5" secondAttribute="height" multiplier="0.35" id="gSa-BX-4f1"/>
+                            <constraint firstItem="lEQ-1X-826" firstAttribute="top" secondItem="7GN-1y-NmU" secondAttribute="bottom" id="iYd-bF-5df"/>
+                            <constraint firstItem="pX4-4O-8w0" firstAttribute="width" secondItem="jnJ-eq-YhR" secondAttribute="width" multiplier="0.25" id="jeF-5U-PhG"/>
+                            <constraint firstItem="vQa-pd-757" firstAttribute="leading" secondItem="1Jg-gW-Wg4" secondAttribute="leading" id="kwZ-ez-WLO"/>
+                            <constraint firstItem="DBP-nB-M5g" firstAttribute="height" secondItem="6Nc-Bd-ZPm" secondAttribute="height" multiplier="1.3" id="neV-80-6FN"/>
+                            <constraint firstItem="u3p-qH-FGj" firstAttribute="centerY" secondItem="xNx-t0-4HJ" secondAttribute="centerY" id="oBq-FJ-Ekj"/>
+                            <constraint firstItem="ubR-fh-sRV" firstAttribute="centerY" secondItem="pX4-4O-8w0" secondAttribute="centerY" multiplier="1.47" id="q3h-R2-fx0"/>
+                            <constraint firstItem="u3p-qH-FGj" firstAttribute="trailing" secondItem="xNx-t0-4HJ" secondAttribute="trailing" constant="-20" id="s8D-6H-CvC"/>
+                            <constraint firstItem="G7D-oe-OkT" firstAttribute="leading" secondItem="jnJ-eq-YhR" secondAttribute="leading" constant="8" id="sgp-BH-0U3"/>
+                            <constraint firstItem="G7D-oe-OkT" firstAttribute="top" secondItem="jnJ-eq-YhR" secondAttribute="top" constant="8" id="si8-a2-boL"/>
+                            <constraint firstItem="aFK-Go-QH8" firstAttribute="top" secondItem="jnJ-eq-YhR" secondAttribute="top" id="st6-3a-dwY"/>
+                            <constraint firstItem="aqn-xa-zk5" firstAttribute="top" secondItem="G7D-oe-OkT" secondAttribute="bottom" constant="8" id="tg2-H9-Hh2"/>
+                            <constraint firstItem="xNx-t0-4HJ" firstAttribute="leading" secondItem="G7D-oe-OkT" secondAttribute="trailing" constant="8" id="u9v-S8-t99"/>
+                            <constraint firstItem="7GN-1y-NmU" firstAttribute="width" secondItem="jnJ-eq-YhR" secondAttribute="width" multiplier="0.5" id="uXN-cM-3nd"/>
+                            <constraint firstItem="lEQ-1X-826" firstAttribute="leading" secondItem="7GN-1y-NmU" secondAttribute="leading" id="vyt-8H-wkw"/>
+                            <constraint firstItem="xNx-t0-4HJ" firstAttribute="top" secondItem="jnJ-eq-YhR" secondAttribute="top" constant="8" id="w0w-QT-Ffm"/>
+                            <constraint firstItem="6Nc-Bd-ZPm" firstAttribute="leading" secondItem="DBP-nB-M5g" secondAttribute="trailing" constant="5" id="xoQ-5P-Jdl"/>
+                            <constraint firstItem="pX4-4O-8w0" firstAttribute="centerY" secondItem="jnJ-eq-YhR" secondAttribute="centerY" id="ymB-bi-nma"/>
+                            <constraint firstItem="1Jg-gW-Wg4" firstAttribute="centerY" secondItem="aqn-xa-zk5" secondAttribute="centerY" id="zCY-wB-DUy"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Zti-hS-CpJ" secondAttribute="bottom" id="82f-7M-HLf"/>
+                <constraint firstAttribute="trailing" secondItem="Zti-hS-CpJ" secondAttribute="trailing" id="Rfg-b0-m0l"/>
+                <constraint firstItem="Zti-hS-CpJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="euQ-kJ-IoU"/>
+                <constraint firstItem="Zti-hS-CpJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iUg-h8-Huy"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomHelpTitle" destination="Fz5-3e-qDC" id="mzl-IR-NWk"/>
+                <outlet property="inputType" destination="pX4-4O-8w0" id="hdO-cA-l5g"/>
+                <outlet property="inputTypePage" destination="ubR-fh-sRV" id="9v3-1e-bQ2"/>
+                <outlet property="oneNat" destination="G7D-oe-OkT" id="1mD-mq-tNt"/>
+                <outlet property="oneNatImg" destination="lEQ-1X-826" id="eig-YZ-FDH"/>
+                <outlet property="oneNatTitle" destination="7GN-1y-NmU" id="EWG-Nv-nxn"/>
+                <outlet property="showHelp" destination="6Nc-Bd-ZPm" id="hRm-WI-aXb"/>
+                <outlet property="speekImage" destination="DBP-nB-M5g" id="yf7-lu-6IH"/>
+                <outlet property="threeNat" destination="aqn-xa-zk5" id="e1H-aI-NDl"/>
+                <outlet property="threeNatImg" destination="1Jg-gW-Wg4" id="60b-KI-fsA"/>
+                <outlet property="threeNatTitle" destination="vQa-pd-757" id="Id5-1Q-hRr"/>
+                <outlet property="topHelpTitle" destination="f8c-Vh-kD5" id="Dov-IH-wy3"/>
+                <outlet property="twoNat" destination="xNx-t0-4HJ" id="goP-j7-AnQ"/>
+                <outlet property="twoNatImg" destination="u3p-qH-FGj" id="Tmp-Ut-abf"/>
+                <outlet property="twoNatTitle" destination="1oU-pm-rWL" id="s1x-QW-IGe"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.29999999999999999" id="aQ2-3I-K5E">
+            <connections>
+                <action selector="goFlagSelection:" destination="iN0-l3-epB" id="uCi-7i-kRf"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.29999999999999999" id="BpM-6e-BSr">
+            <connections>
+                <action selector="goFlagSelection:" destination="iN0-l3-epB" id="OIh-Cy-mhM"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.29999999999999999" id="T8E-0a-QmT">
+            <connections>
+                <action selector="goFlagSelection:" destination="iN0-l3-epB" id="9MJ-OC-GhQ"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="bEH-gR-oUi">
+            <connections>
+                <action selector="goHelpView:" destination="iN0-l3-epB" id="pgz-3p-pVj"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="show_help_image" width="500" height="500"/>
+    </resources>
+</document>
