@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,8 +25,10 @@ class LoginVC: UIViewController {
             lgf_UserDefaults.set(false, forKey: "show_local_on")
             lgf_UserDefaults.set(false, forKey: "show_time_on")
             
-            let translationDefaultData = Array.init(repeating: "", count: 0) as! NSMutableArray
+            
+            let translationDefaultData :NSMutableArray = []
             translationDefaultData.write(toFile: TranslationArrayPath, atomically: true)
+            
             let selectLanguageDefaultData:NSMutableDictionary = NSMutableDictionary.init(contentsOfFile: DefaultSelectLanguagePath)!
             selectLanguageDefaultData.write(toFile: SelectLanguagePath, atomically: true)
         }
@@ -39,7 +41,7 @@ class LoginVC: UIViewController {
             self.performSegue(withIdentifier: "AllTranslationVCPush", sender: self)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
