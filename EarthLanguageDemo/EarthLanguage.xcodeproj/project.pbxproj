@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1802038E1F66D6D100ECBD56 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1802038B1F66D6D100ECBD56 /* Info.plist */; };
 		1802038F1F66D6D100ECBD56 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802038D1F66D6D100ECBD56 /* Reachability.swift */; };
 		180203921F66DAAA00ECBD56 /* BaiDuTranslateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180203911F66DAAA00ECBD56 /* BaiDuTranslateAPI.swift */; };
 		180203981F678A2A00ECBD56 /* Date+LGFTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180203971F678A2A00ECBD56 /* Date+LGFTool.swift */; };
@@ -27,7 +26,6 @@
 		1834E4D81F5D5AD3005EFEE0 /* UIVIew+LGFTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834E4D71F5D5AD3005EFEE0 /* UIVIew+LGFTool.swift */; };
 		1834E4DC1F5D5D45005EFEE0 /* LGFPCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834E4DB1F5D5D45005EFEE0 /* LGFPCH.swift */; };
 		1834E4F11F5D602C005EFEE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834E4ED1F5D602C005EFEE0 /* AppDelegate.swift */; };
-		1834E4F21F5D602C005EFEE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1834E4EE1F5D602C005EFEE0 /* Info.plist */; };
 		1834E4F31F5D602C005EFEE0 /* Language.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1834E4EF1F5D602C005EFEE0 /* Language.plist */; };
 		1834E4F41F5D602C005EFEE0 /* SelectLanguage.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1834E4F01F5D602C005EFEE0 /* SelectLanguage.plist */; };
 		1834E4F91F5D6035005EFEE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1834E4F51F5D6035005EFEE0 /* LaunchScreen.storyboard */; };
@@ -523,8 +521,6 @@
 				1834E4A61F5D5189005EFEE0 /* Sources */,
 				1834E4A71F5D5189005EFEE0 /* Frameworks */,
 				1834E4A81F5D5189005EFEE0 /* Resources */,
-				496C365268E56A4E4418DEA1 /* [CP] Embed Pods Frameworks */,
-				318B446FFDB0B7D39F4F09B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -588,9 +584,7 @@
 				1834E5A31F60F7F8005EFEE0 /* InputTypeCell.xib in Resources */,
 				183C39651F7145D80006E032 /* Podfile in Resources */,
 				180203A21F679A5400ECBD56 /* SpeechInputVC.xib in Resources */,
-				1802038E1F66D6D100ECBD56 /* Info.plist in Resources */,
 				1834E5961F60D7B8005EFEE0 /* Assets.xcassets in Resources */,
-				1834E4F21F5D602C005EFEE0 /* Info.plist in Resources */,
 				1834E59F1F60E824005EFEE0 /* NationalitySelectionVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,49 +592,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		318B446FFDB0B7D39F4F09B7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthLanguage/Pods-EarthLanguage-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		496C365268E56A4E4418DEA1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthLanguage/Pods-EarthLanguage-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B663A95BE7107957224A6EC7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarthLanguage-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

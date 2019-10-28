@@ -75,4 +75,6 @@ class ManualInputVC: UIView,UITextFieldDelegate {
         self.ManualInputText.resignFirstResponder()
         return true
     }
+    
+
 }
